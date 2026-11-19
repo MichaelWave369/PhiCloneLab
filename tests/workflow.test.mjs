@@ -15,5 +15,5 @@ test("Deploy waits for one visible Pages artifact with read permission", () => {
   const deploy = workflow.slice(workflow.indexOf("\n  deploy:"));
   assert.match(deploy, /actions: read/);
   assert.match(deploy, /Pages artifact visibility/);
-  assert.match(deploy, /"$count" = "1"/);
+  assert.ok(deploy.includes('if [ "$count" = "1" ]; then'), "Expected a literal one-artifact guard");
 });
