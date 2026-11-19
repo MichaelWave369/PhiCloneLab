@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#07181c"><meta name="description" content="PhiCloneLab Evidence Atlas: a provenance-aware explorer of cloning science, human cloning proposals and ethical guidance.">
+<title>Evidence Atlas · Φ CloneLab</title>
+<link rel="stylesheet" href="./atlas.css">
+<script src="./atlas.js" defer></script>
+</head>
+<body>
+<header class="masthead">
+  <div class="wrap masthead-inner"><a class="brand" href="./index.html"><span class="phi">Φ</span><span>CLONELAB <small>/ EVIDENCE ATLAS</small></span></a>
+    <nav><a href="./index.html">← Simulator</a><a href="#timeline">Timeline</a><a href="#compare">Compare</a><a href="#sources">Sources</a></nav><span class="online">LOCAL-FIRST / 0.2</span></div>
+</header>
+<main>
+  <section class="wrap hero">
+    <div><div class="eyebrow">RESEARCH SYSTEMS / EVIDENCE ENGINE / V0.2</div><h1>Curiosity needs<br><em>receipts.</em></h1><p>Trace what was demonstrated in animal biology, what was proposed by researchers, and what remains unverified. One claim at a time, with the evidence trail attached.</p>
+    <div class="hero-actions"><a class="button primary" href="#explore">EXPLORE CLAIMS ↓</a><button class="button subdued" id="download" type="button">EXPORT RESEARCH JSON ↗</button></div>
+    </div>
+    <div class="hero-graphic" aria-hidden="true"><div class="graphic-ring one"></div><div class="graphic-ring two"></div><div class="graphic-ring three"></div><div class="graphic-center"><span>∴</span><small>VERIFY / THEN MODEL</small></div><div class="crossline horizontal"></div><div class="crossline vertical"></div></div>
+  </section>
+  <section class="wrap stats" aria-label="Atlas summary">
+    <div class="stat"><span>01 / EVIDENCE SOURCES</span><strong id="source-count">—</strong><small>PUBLICLY LINKED</small></div>
+    <div class="stat"><span>02 / TRACKED CLAIMS</span><strong id="claim-count">—</strong><small>CLASSIFIED BY EVIDENCE</small></div>
+    <div class="stat"><span>03 / OUTCOME RULE</span><strong>0</strong><small>INVENTED HUMAN CLONING RESULTS</small></div>
+    <div class="stat"><span>04 / PROVENANCE</span><strong>OPEN</strong><small>EVERY CLAIM IS AUDITABLE</small></div>
+  </section>
+  <section class="wrap section" id="explore">
+    <div class="section-kicker">01 / INVESTIGATION</div><div class="section-title"><div><h2>Claim explorer<span>.</span></h2><p>Choose a claim to inspect its grounding, limits, and missing evidence.</p></div><div class="review-label">CURATED DATA · <span id="curated-at">—</span></div></div>
+    <div class="filterbar"><label class="searchbox"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Search claims, people, and topics…" aria-label="Search claims"></label><label class="selectbox">EVIDENCE LEVEL <select id="level"><option value="all">All levels</option><option value="demonstrated">Demonstrated</option><option value="documented">Documented proposal</option><option value="guidance">Ethics guidance</option><option value="unverified">Unverified outcomes</option></select></label></div>
+    <div class="explorer">
+      <div class="panel claim-list"><div class="panel-heading">CLAIMS <span id="result-count">—</span></div><div id="claims"><div class="loading">Loading evidence registry…</div></div></div>
+      <article class="panel detail" id="detail" aria-live="polite"><div class="loading">Reading registry…</div></article>
+    </div>
+  </section>
+  <section class="wrap section" id="timeline">
+    <div class="section-kicker">02 / HISTORY</div><div class="section-title"><div><h2>Milestones, not myths<span>.</span></h2><p>Chronology helps distinguish scientific discoveries from later commercial proposals.</p></div></div>
+    <div id="milestones" class="milestones"></div>
+  </section>
+  <section class="wrap section" id="compare">
+    <div class="section-kicker">03 / REASONING</div><div class="section-title"><div><h2>Side-by-side evidence<span>.</span></h2><p>Compare two claims without collapsing different kinds of evidence into one headline.</p></div></div>
+    <div class="compare-selectors"><label>LEFT CLAIM <select id="compare-left"></select></label><label>RIGHT CLAIM <select id="compare-right"></select></label></div>
+    <div class="compare-grid"><article class="panel compare-card" id="compare-a"></article><article class="panel compare-card" id="compare-b"></article></div>
+    <div class="comparison-rule"><span>↔</span><p>Different evidence categories cannot be treated as equivalent proof. A documented proposal verifies that an idea was proposed, not that its intended outcome happened.</p></div>
+  </section>
+  <section class="wrap section" id="sources">
+    <div class="section-kicker">04 / SOURCE REGISTRY</div><div class="section-title"><div><h2>Read the originals<span>.</span></h2><p>Publisher, source type, and limitations remain visible. Source presence never guarantees a claim's truth.</p></div></div>
+    <div class="sources-grid" id="source-list"></div>
+    <p class="disclaimer">PhiCloneLab is an educational, non-operational research tool. It contains no cloning protocol, biological operating parameters or predictions of viable embryos. Reproductive cloning in humans is not endorsed or simulated.</p>
+  </section>
+</main>
+<footer><div class="wrap footer-inner"><div><b>Φ CLONELAB</b><p>Logic above slop. Evidence above assumptions.</p></div><div>OPEN SOURCE · MIT LICENSE<br><a href="https://github.com/MichaelWave369/PhiCloneLab" target="_blank" rel="noopener noreferrer">REPOSITORY ↗</a></div></div></footer>
+<div id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
