@@ -6,6 +6,15 @@ An open-source, dependency-free, evidence-aware educational research simulator e
 
 Open `site/index.html` directly in a browser, or enable GitHub Pages using **Settings → Pages → Build and deployment → GitHub Actions**. The workflow deploys `site/` on every push to `main`.
 
+## v0.2 Evidence Atlas
+
+- [Evidence Atlas](site/atlas.html) lets visitors inspect individual scientific and historical claims and see exactly which sources support them.
+- Evidence categories distinguish demonstrated animal/cell science, documented proposals, professional guidance, and unverified outcomes.
+- Chronological timeline, side-by-side comparisons, research limitations, and local JSON export.
+- Structured and versioned dataset: [site/data/research.json](site/data/research.json).
+- To run locally: `python -m http.server 8000 --directory site` from the repository root, then open `http://localhost:8000/atlas.html`.
+- Run `npm test` to validate registry integrity with no external npm dependencies.
+
 ## v0.1 features
 
 - Four distinct conceptual research pathways: animal SCNT, embryo splitting, induced pluripotent stem cells, and Bryan Bishop's proposal.

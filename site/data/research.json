@@ -1,0 +1,303 @@
+{
+  "schemaVersion": "0.2.0",
+  "curatedAt": "2026-11-19",
+  "notice": "A teaching and evidence-tracing dataset, not a laboratory protocol or prediction engine.",
+  "evidenceLevels": [
+    {
+      "id": "demonstrated",
+      "label": "Demonstrated",
+      "meaning": "Documented result in the named domain and species. Does not generalize automatically to humans."
+    },
+    {
+      "id": "documented",
+      "label": "Documented proposal",
+      "meaning": "A directly observable written proposal or correspondence, not proof that its aims succeeded."
+    },
+    {
+      "id": "guidance",
+      "label": "Ethics guidance",
+      "meaning": "Professional guidance or policy, not experimental evidence."
+    },
+    {
+      "id": "unverified",
+      "label": "Unverified outcome",
+      "meaning": "No confirming result is included in the cited source set."
+    }
+  ],
+  "sources": [
+    {
+      "id": "R001",
+      "title": "Dolly · The Roslin Institute",
+      "publisher": "University of Edinburgh",
+      "year": 2024,
+      "kind": "institutional",
+      "url": "https://vet.ed.ac.uk/roslin/about/history/dolly",
+      "summary": "Institutional history of Dolly, born in 1996."
+    },
+    {
+      "id": "R002",
+      "title": "Cloning FAQs · The Roslin Institute",
+      "publisher": "University of Edinburgh",
+      "year": 2024,
+      "kind": "institutional",
+      "url": "https://vet.ed.ac.uk/roslin/about/history/dolly/facts/cloning",
+      "summary": "Explanation of somatic-cell nuclear transfer and cloning biology."
+    },
+    {
+      "id": "R003",
+      "title": "The Nobel Prize in Physiology or Medicine 2012",
+      "publisher": "Nobel Prize Outreach",
+      "year": 2012,
+      "kind": "institutional",
+      "url": "https://www.nobelprize.org/prizes/medicine/2012/summary/",
+      "summary": "Prize recognition for discoveries that mature cells can be reprogrammed to pluripotency."
+    },
+    {
+      "id": "R004",
+      "title": "Designer baby FAQ",
+      "publisher": "Bryan Bishop / DIYH+ wiki",
+      "year": null,
+      "kind": "self-published",
+      "url": "https://diyhpl.us/wiki/designer-baby-faq/",
+      "summary": "Proponent's own explanation of genetic-engineering ideas; not independently validated outcomes."
+    },
+    {
+      "id": "R005",
+      "title": "EFTA01003966: designer babies (use of funds)",
+      "publisher": "Archived transcription of released correspondence",
+      "year": 2018,
+      "kind": "archive-transcript",
+      "url": "https://tommycarstensen.com/epstein/data/documents/set9/01003/EFTA01003966.html",
+      "summary": "Archived transcription of 2018 fundraising discussion. Check original source when quoting; correspondence does not establish funding."
+    },
+    {
+      "id": "R006",
+      "title": "U.S. DOJ: Epstein Library",
+      "publisher": "U.S. Department of Justice",
+      "year": 2026,
+      "kind": "official-index",
+      "url": "https://www.justice.gov/epstein/search",
+      "summary": "Official discovery entrypoint for released case materials."
+    },
+    {
+      "id": "R007",
+      "title": "ISSCR Guidelines (2025 update, v1.2)",
+      "publisher": "International Society for Stem Cell Research",
+      "year": 2025,
+      "kind": "professional-guidance",
+      "url": "https://www.isscr.org/guidelines",
+      "summary": "Guidance on ethical oversight, human embryo research and reproductive cloning."
+    },
+    {
+      "id": "R008",
+      "title": "Genetic modification FAQs · Roslin Institute",
+      "publisher": "University of Edinburgh",
+      "year": 2024,
+      "kind": "institutional",
+      "url": "https://vet.ed.ac.uk/roslin/about/history/dolly/facts/genetic-modification",
+      "summary": "Explains how genetic modification differs from cloning."
+    },
+    {
+      "id": "R009",
+      "title": "Dolly's legacy: cloning to gene editing",
+      "publisher": "Nature",
+      "year": 2026,
+      "kind": "journalism",
+      "url": "https://www.nature.com/articles/d41586-026-02096-1",
+      "summary": "Reporting on the history, impact and limitations of animal cloning."
+    }
+  ],
+  "claims": [
+    {
+      "id": "C001",
+      "title": "Dolly was cloned from an adult mammalian cell",
+      "category": "animal-science",
+      "level": "demonstrated",
+      "date": "1996-07-05",
+      "short": "Dolly was born in 1996; the Roslin Institute documents her as the first mammal cloned from an adult cell.",
+      "interpretation": "The result belongs to animal reproductive biology, not human clinical feasibility.",
+      "sources": [
+        "R001",
+        "R002"
+      ],
+      "limitations": [
+        "Not evidence of any cloned human.",
+        "Does not define clinical success rates for other species."
+      ]
+    },
+    {
+      "id": "C002",
+      "title": "Animal nuclear transfer and human reproductive cloning are distinct claims",
+      "category": "animal-science",
+      "level": "demonstrated",
+      "date": "1996-07-05",
+      "short": "Animal nuclear-transfer demonstrations show specific animal outcomes and do not themselves establish human reproductive cloning.",
+      "interpretation": "Do not assume techniques generalize across species or contexts.",
+      "sources": [
+        "R002",
+        "R009"
+      ],
+      "limitations": [
+        "No human cloning result is claimed.",
+        "No operational procedure is included."
+      ]
+    },
+    {
+      "id": "C003",
+      "title": "Cellular reprogramming to pluripotency is established science",
+      "category": "cell-biology",
+      "level": "demonstrated",
+      "date": "2012-10-08",
+      "short": "The 2012 Nobel Prize recognized work demonstrating that mature cells can be reprogrammed to pluripotency.",
+      "interpretation": "Producing pluripotent cells is not producing a cloned organism.",
+      "sources": [
+        "R003"
+      ],
+      "limitations": [
+        "Cell cultures are not human births."
+      ]
+    },
+    {
+      "id": "C004",
+      "title": "Genetic engineering and cloning are not equivalent",
+      "category": "animal-science",
+      "level": "demonstrated",
+      "date": null,
+      "short": "Cloning and intentional genome editing answer different questions about inheritance and biological variation.",
+      "interpretation": "A gene-edited animal need not be a clone, and a clone need not be gene-edited.",
+      "sources": [
+        "R008"
+      ],
+      "limitations": [
+        "Descriptions here are conceptual, not procedural."
+      ]
+    },
+    {
+      "id": "C005",
+      "title": "Bishop publicly advanced human embryo genetic-engineering proposals",
+      "category": "bishop-investigation",
+      "level": "documented",
+      "date": null,
+      "short": "Bryan Bishop's public FAQ outlines proposed avenues for human embryo genetic engineering.",
+      "interpretation": "This verifies that ideas were proposed publicly. It does not establish successful reproductive experiments.",
+      "sources": [
+        "R004"
+      ],
+      "limitations": [
+        "Self-authored proposal rather than independent confirmation."
+      ]
+    },
+    {
+      "id": "C006",
+      "title": "An August 2018 email described a proposed cloning-related company",
+      "category": "bishop-investigation",
+      "level": "documented",
+      "date": "2018-08-05",
+      "short": "Released correspondence describes a proposed designer-baby and human-cloning company and a five-year funding request.",
+      "interpretation": "Documented intent and budget are not proof of financing, laboratory implementation, or a human-cloning result.",
+      "sources": [
+        "R005",
+        "R006"
+      ],
+      "limitations": [
+        "Archive transcription should be checked against original release.",
+        "No actual investment established by this email."
+      ]
+    },
+    {
+      "id": "C007",
+      "title": "Bishop's project produced a cloned human",
+      "category": "bishop-investigation",
+      "level": "unverified",
+      "date": null,
+      "short": "The reviewed source set does not contain independent scientific verification of a cloned human produced by Bishop's project.",
+      "interpretation": "Treat success claims as unsupported pending credible independent publication and verification.",
+      "sources": [],
+      "limitations": [
+        "Absence from this curated dataset cannot establish every event that occurred.",
+        "No human cloning method or outcome is represented."
+      ]
+    },
+    {
+      "id": "C008",
+      "title": "Human reproductive cloning is identified as a prohibited activity in ISSCR guidance",
+      "category": "ethics",
+      "level": "guidance",
+      "date": "2025-08-01",
+      "short": "The ISSCR's guidelines distinguish human reproductive cloning from permitted laboratory stem-cell research.",
+      "interpretation": "Professional ethical guidance is a normative research boundary rather than evidence of an experiment.",
+      "sources": [
+        "R007"
+      ],
+      "limitations": [
+        "Consult current local law and institutional rules for specific questions."
+      ]
+    },
+    {
+      "id": "C009",
+      "title": "A clone would not copy the source individual's memories or identity",
+      "category": "concepts",
+      "level": "demonstrated",
+      "date": null,
+      "short": "Genetic similarity does not encode the memories, learned skills, developmental history or personality of an existing individual.",
+      "interpretation": "Nuclear DNA is only one component of a person's development and identity.",
+      "sources": [
+        "R002"
+      ],
+      "limitations": [
+        "Memory and personhood are not measured by this application."
+      ]
+    }
+  ],
+  "timeline": [
+    {
+      "id": "T001",
+      "year": 1996,
+      "label": "Dolly the sheep born",
+      "details": "Animal cloning from an adult cell was demonstrated.",
+      "claimIds": [
+        "C001"
+      ],
+      "sourceIds": [
+        "R001"
+      ]
+    },
+    {
+      "id": "T002",
+      "year": 2012,
+      "label": "Cell reprogramming receives Nobel Prize",
+      "details": "Establishes a distinct cell-biology milestone.",
+      "claimIds": [
+        "C003"
+      ],
+      "sourceIds": [
+        "R003"
+      ]
+    },
+    {
+      "id": "T003",
+      "year": 2018,
+      "label": "Bishop correspondence",
+      "details": "Documents a proposed research venture, not a completed clone.",
+      "claimIds": [
+        "C006"
+      ],
+      "sourceIds": [
+        "R005",
+        "R006"
+      ]
+    },
+    {
+      "id": "T004",
+      "year": 2025,
+      "label": "ISSCR guidelines update",
+      "details": "Emphasizes oversight and ethical research boundaries.",
+      "claimIds": [
+        "C008"
+      ],
+      "sourceIds": [
+        "R007"
+      ]
+    }
+  ]
+}
